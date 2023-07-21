@@ -31,7 +31,6 @@ void swap_ints(int *a, int *b)
  *
  * Description: Uses the last element of the partition as the pivot.
  * Prints the array after each swap of two elements.
- * Return: Void.
  */
 int hoare_partition(int *array, size_t size, int left, int right)
 {

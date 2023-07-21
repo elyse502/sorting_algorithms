@@ -2,8 +2,8 @@
 
 /**
  * swap_ints - Swap two integers in an array.
- * @a: The first integer to swap.
- * @b: The second integer to swap.
+ * @a: The First int to swap.
+ * @b: The Second int to swap.
  * Return: Void.
  */
 void swap_ints(int *a, int *b)
@@ -22,25 +22,25 @@ void swap_ints(int *a, int *b)
  * @size: The size of the array.
  *
  * Description: Prints the array after each swap.
- * Return: Void.
+ * Return: NULL.
  */
 void selection_sort(int *array, size_t size)
 {
 	int *min;
-	size_t a, b;
+	size_t i, j;
 
 	if (array == NULL || size < 2)
 		return;
 
-	for (a = 0; a < size - 1; a++)
+	for (i = 0; i < size - 1; i++)
 	{
-		min = array + a;
-		for (b = b + 1; b < size; b++)
-			min = (array[b] < *min) ? (array + b) : min;
+		min = array + i;
+		for (j = i + 1; j < size; j++)
+			min = (array[j] < *min) ? (array + j) : min;
 
-		if ((array + a) != min)
+		if ((array + i) != min)
 		{
-			swap_ints(array + a, min);
+			swap_ints(array + i, min);
 			print_array(array, size);
 		}
 	}

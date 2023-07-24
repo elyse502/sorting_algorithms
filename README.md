@@ -446,7 +446,6 @@ Merge sort involves recursively splitting the array into 2 parts, sorting and fi
 Merge sort recursively breaks down the arrays to subarrays of size half. Similarly, 3-way Merge sort breaks down the arrays to subarrays of size one third.
 
 # Tasks 📃
-0. Bubble sort
 ## 0-bubble_sort.c, 0-O
 [**`YoutubeVideo`**](https://www.youtube.com/watch?v=lyZQPjUT5B4)
 A function that sorts an array of integers in ascending order using the [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) algorithm
@@ -458,7 +457,6 @@ Write in the file `0-O`, the big O notations of the time complexity of the Bubbl
 * in the average case
 * in the worst case
 
-1. Insertion sort
 ## 1-insertion_sort_list.c, 1-O
 [**`YoutubeVideo`**](https://www.youtube.com/watch?v=ROalU379l3U)
 A function that sorts a doubly linked list of integers in ascending order using the [Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm
@@ -512,6 +510,19 @@ A function that sorts a doubly linked list of integers in ascending order using 
 * You’re expected to print the `list` after each time you swap two elements (See example below)
 
 Write in the file `101-O`, the big O notations of the time complexity of the Cocktail shaker sort algorithm, with 1 notation per line:
+* in the best case
+* in the average case
+* in the worst case
+
+## 102-counting_sort.c, 102-O
+A function that sorts an array of integers in ascending order using the [Counting sort](https://en.wikipedia.org/wiki/Counting_sort) algorithm
+* Prototype: `void counting_sort(int *array, size_t size);`
+* You can assume that `array` will contain only numbers `>= 0`
+* You are allowed to use `malloc` and `free` for this task
+* You’re expected to print your counting array once it is set up (See example below)
+    * This array is of size **`k + 1`** where k is the largest number in `array`
+
+Write in the file `102-O`, the big O notations of the time complexity of the Counting sort algorithm, with 1 notation per line:
 * in the best case
 * in the average case
 * in the worst case

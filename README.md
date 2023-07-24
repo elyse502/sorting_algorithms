@@ -561,6 +561,81 @@ A function that sorts an array of integers in ascending order using the [Radix s
 * You are allowed to use `malloc` and `free` for this task
 * You’re expected to print the `array` each time you increase your **`significant digit`**
 
+## 106-bitonic_sort.c, 106-O
+A function that sorts an array of integers in ascending order using the [Bitonic sort](https://en.wikipedia.org/wiki/Bitonic_sorter) algorithm
+* Prototype: `void bitonic_sort(int *array, size_t size);`
+* You can assume that `size` will be equal to `2^k`, where `k >= 0` (when `array` is not `NULL` …)
+* You are allowed to use `printf`
+* You’re expected to print the `array` each time you swap two elements 
+* Output: see example
+
+Write in the file `106-O`, the big O notations of the time complexity of the Bitonic sort algorithm, with 1 notation per line:
+* in the best case
+* in the average case
+* in the worst case
+
+## 107-quick_sort_hoare.c, 107-O
+A function that sorts an array of integers in ascending order using the [Quick sort](https://en.wikipedia.org/wiki/Quicksort) algorithm
+* Prototype: `void quick_sort_hoare(int *array, size_t size);`
+* You must implement the **`Hoare`** partition scheme.
+* The pivot should always be the last element of the partition being sorted.
+* You’re expected to print the `array` after each time you swap two elements 
+
+Write in the file `107-O`, the big O notations of the time complexity of the Quick sort algorithm, with 1 notation per line:
+* in the best case
+* in the average case
+* in the worst case
+
+## 1000-sort_deck.c, deck.h
+[**`YoutubeVideo`**](https://www.youtube.com/watch?v=_HJlGWXzlLA)
+A function that sorts a deck of cards.
+* Prototype: `void sort_deck(deck_node_t **deck);`
+* You are allowed to use the C standard library function `qsort`
+* Please use the following data structures:
+```
+typedef enum kind_e
+{
+    SPADE = 0,
+    HEART,
+    CLUB,
+    DIAMOND
+} kind_t;
+
+/**
+ * struct card_s - Playing card
+ *
+ * @value: Value of the card
+ * From "Ace" to "King"
+ * @kind: Kind of the card
+ */
+typedef struct card_s
+{
+    const char *value;
+    const kind_t kind;
+} card_t;
+
+/**
+ * struct deck_node_s - Deck of card
+ *
+ * @card: Pointer to the card of the node
+ * @prev: Pointer to the previous node of the list
+ * @next: Pointer to the next node of the list
+ */
+typedef struct deck_node_s
+{
+    const card_t *card;
+    struct deck_node_s *prev;
+    struct deck_node_s *next;
+} deck_node_t;
+```
+* You have to push you `deck.h` header file, containing the previous data structures definition
+* Each node of the doubly linked list contains a card that you cannot modify. You have to swap the nodes.
+* You can assume there is exactly `52` elements in the doubly linked list.
+* You are free to use the sorting algorithm of your choice
+* The deck must be ordered:
+    * From `Ace` to `King`
+    * From Spades to Diamonds
+
 ## Support🎉
 _If you like how I present and document my work do me a favor of giving a **Star** ✨ to my repos |&&| a [**Follow**](https://github.com/elyse502) 👥._
 

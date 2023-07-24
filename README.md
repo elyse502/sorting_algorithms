@@ -450,7 +450,7 @@ Merge sort recursively breaks down the arrays to subarrays of size half. Similar
 [**`YoutubeVideo`**](https://www.youtube.com/watch?v=lyZQPjUT5B4)
 A function that sorts an array of integers in ascending order using the [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) algorithm
 * Prototype: `void bubble_sort(int *array, size_t size);`
-* You’re expected to print the `array` after each time you swap two elements (See example below)
+* You’re expected to print the `array` after each time you swap two elements 
 
 Write in the file `0-O`, the big O notations of the time complexity of the Bubble sort algorithm, with 1 notation per line:
 * in the best case
@@ -462,7 +462,7 @@ Write in the file `0-O`, the big O notations of the time complexity of the Bubbl
 A function that sorts a doubly linked list of integers in ascending order using the [Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm
 * Prototype: `void insertion_sort_list(listint_t **list);`
 * You are not allowed to modify the integer `n` of a node. You have to swap the nodes themselves.
-* You’re expected to print the `list` after each time you swap two elements (See example below)
+* You’re expected to print the `list` after each time you swap two elements 
 
 Write in the file `1-O`, the big O notations of the time complexity of the Insertion sort algorithm, with 1 notation per line:
 * in the best case
@@ -473,7 +473,7 @@ Write in the file `1-O`, the big O notations of the time complexity of the Inser
 [**`YoutubeVideo`**](https://www.youtube.com/watch?v=Ns4TPTC8whw)
 A function that sorts an array of integers in ascending order using the [Selection sort](https://en.wikipedia.org/wiki/Selection_sort) algorithm
 * Prototype: `void selection_sort(int *array, size_t size);`
-* You’re expected to print the `array` after each time you swap two elements (See example below)
+* You’re expected to print the `array` after each time you swap two elements 
 
 Write in the file `2-O`, the big O notations of the time complexity of the Selection sort algorithm, with 1 notation per line:
 * in the best case
@@ -486,7 +486,7 @@ A function that sorts an array of integers in ascending order using the [Quick s
 * Prototype: `void quick_sort(int *array, size_t size);`
 * You must implement the `Lomuto` partition scheme.
 * The pivot should always be the last element of the partition being sorted.
-* You’re expected to print the `array` after each time you swap two elements (See example below)
+* You’re expected to print the `array` after each time you swap two elements 
 
 Write in the file `3-O`, the big O notations of the time complexity of the Quick sort algorithm, with 1 notation per line:
 * in the best case
@@ -499,7 +499,7 @@ A function that sorts an array of integers in ascending order using the [Shell s
 * You must use the following sequence of intervals (a.k.a the Knuth sequence):
     * `n+1 = n * 3 + 1`
     * `1, 4, 13, 40, 121, ...`
-* You’re expected to print the `array` each time you decrease the interval (See example below).
+* You’re expected to print the `array` each time you decrease the interval.
 
 **No big O notations of the time complexity of the Shell sort (Knuth sequence) algorithm needed - as the complexity is dependent on the size of array and gap**
 
@@ -507,7 +507,7 @@ A function that sorts an array of integers in ascending order using the [Shell s
 A function that sorts a doubly linked list of integers in ascending order using the [Cocktail shaker sort](https://en.wikipedia.org/wiki/Cocktail_shaker_sort) algorithm
 * Prototype: `void cocktail_sort_list(listint_t **list);`
 * You are not allowed to modify the integer `n` of a node. You have to swap the nodes themselves.
-* You’re expected to print the `list` after each time you swap two elements (See example below)
+* You’re expected to print the `list` after each time you swap two elements 
 
 Write in the file `101-O`, the big O notations of the time complexity of the Cocktail shaker sort algorithm, with 1 notation per line:
 * in the best case
@@ -519,7 +519,7 @@ A function that sorts an array of integers in ascending order using the [Countin
 * Prototype: `void counting_sort(int *array, size_t size);`
 * You can assume that `array` will contain only numbers `>= 0`
 * You are allowed to use `malloc` and `free` for this task
-* You’re expected to print your counting array once it is set up (See example below)
+* You’re expected to print your counting array once it is set up 
     * This array is of size **`k + 1`** where k is the largest number in `array`
 
 Write in the file `102-O`, the big O notations of the time complexity of the Counting sort algorithm, with 1 notation per line:
@@ -546,7 +546,7 @@ Write in the file `103-O`, the big O notations of the time complexity of the Mer
 A function that sorts an array of integers in ascending order using the [Heap sort](https://en.wikipedia.org/wiki/Heapsort) algorithm
 * Prototype: `void heap_sort(int *array, size_t size);`
 * You must implement the `sift-down` heap sort algorithm
-* You’re expected to print the `array` after each time you swap two elements (See example below)
+* You’re expected to print the `array` after each time you swap two elements 
 
 Write in the file `104-O`, the big O notations of the time complexity of the Heap sort algorithm, with 1 notation per line:
 * in the best case

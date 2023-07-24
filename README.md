@@ -542,6 +542,25 @@ Write in the file `103-O`, the big O notations of the time complexity of the Mer
 * in the average case
 * in the worst case
 
+## 104-heap_sort.c, 104-O
+A function that sorts an array of integers in ascending order using the [Heap sort](https://en.wikipedia.org/wiki/Heapsort) algorithm
+* Prototype: `void heap_sort(int *array, size_t size);`
+* You must implement the `sift-down` heap sort algorithm
+* You’re expected to print the `array` after each time you swap two elements (See example below)
+
+Write in the file `104-O`, the big O notations of the time complexity of the Heap sort algorithm, with 1 notation per line:
+* in the best case
+* in the average case
+* in the worst case
+
+## 105-radix_sort.c
+A function that sorts an array of integers in ascending order using the [Radix sort](https://en.wikipedia.org/wiki/Radix_sort) algorithm
+* Prototype: `void radix_sort(int *array, size_t size);`
+* You must implement the **`LSD`** radix sort algorithm
+* You can assume that `array` will contain only numbers `>= 0`
+* You are allowed to use `malloc` and `free` for this task
+* You’re expected to print the `array` each time you increase your **`significant digit`**
+
 ## Support🎉
 _If you like how I present and document my work do me a favor of giving a **Star** ✨ to my repos |&&| a [**Follow**](https://github.com/elyse502) 👥._
 

@@ -469,6 +469,30 @@ Write in the file `1-O`, the big O notations of the time complexity of the Inser
 * in the average case
 * in the worst case
 
+## 2-selection_sort.c, 2-O
+[**`YoutubeVideo`**](https://www.youtube.com/watch?v=Ns4TPTC8whw)
+A function that sorts an array of integers in ascending order using the [Selection sort](https://en.wikipedia.org/wiki/Selection_sort) algorithm
+* Prototype: `void selection_sort(int *array, size_t size);`
+* You’re expected to print the `array` after each time you swap two elements (See example below)
+
+Write in the file `2-O`, the big O notations of the time complexity of the Selection sort algorithm, with 1 notation per line:
+* in the best case
+* in the average case
+* in the worst case
+
+## 3-quick_sort.c, 3-O
+[**`YoutubeVideo`**](https://www.youtube.com/watch?v=ywWBy6J5gz8)
+A function that sorts an array of integers in ascending order using the [Quick sort](https://en.wikipedia.org/wiki/Quicksort) algorithm
+* Prototype: `void quick_sort(int *array, size_t size);`
+* You must implement the `Lomuto` partition scheme.
+* The pivot should always be the last element of the partition being sorted.
+* You’re expected to print the `array` after each time you swap two elements (See example below)
+
+Write in the file `3-O`, the big O notations of the time complexity of the Quick sort algorithm, with 1 notation per line:
+* in the best case
+* in the average case
+* in the worst case
+
 ## Support🎉
 _If you like how I present and document my work do me a favor of giving a **Star** ✨ to my repos |&&| a [**Follow**](https://github.com/elyse502) 👥._
 

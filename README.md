@@ -446,6 +446,7 @@ Merge sort involves recursively splitting the array into 2 parts, sorting and fi
 Merge sort recursively breaks down the arrays to subarrays of size half. Similarly, 3-way Merge sort breaks down the arrays to subarrays of size one third.
 
 # Tasks 📃
+0. Bubble sort
 ## 0-bubble_sort.c, 0-O
 [**`YoutubeVideo`**](https://www.youtube.com/watch?v=lyZQPjUT5B4)
 A function that sorts an array of integers in ascending order using the [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) algorithm
@@ -457,6 +458,7 @@ Write in the file `0-O`, the big O notations of the time complexity of the Bubbl
 * in the average case
 * in the worst case
 
+1. Insertion sort
 ## 1-insertion_sort_list.c, 1-O
 [**`YoutubeVideo`**](https://www.youtube.com/watch?v=ROalU379l3U)
 A function that sorts a doubly linked list of integers in ascending order using the [Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm
@@ -502,6 +504,17 @@ A function that sorts an array of integers in ascending order using the [Shell s
 * You’re expected to print the `array` each time you decrease the interval (See example below).
 
 **No big O notations of the time complexity of the Shell sort (Knuth sequence) algorithm needed - as the complexity is dependent on the size of array and gap**
+
+## 101-cocktail_sort_list.c, 101-O
+A function that sorts a doubly linked list of integers in ascending order using the [Cocktail shaker sort](https://en.wikipedia.org/wiki/Cocktail_shaker_sort) algorithm
+* Prototype: `void cocktail_sort_list(listint_t **list);`
+* You are not allowed to modify the integer `n` of a node. You have to swap the nodes themselves.
+* You’re expected to print the `list` after each time you swap two elements (See example below)
+
+Write in the file `101-O`, the big O notations of the time complexity of the Cocktail shaker sort algorithm, with 1 notation per line:
+* in the best case
+* in the average case
+* in the worst case
 
 ## Support🎉
 _If you like how I present and document my work do me a favor of giving a **Star** ✨ to my repos |&&| a [**Follow**](https://github.com/elyse502) 👥._

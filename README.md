@@ -527,6 +527,21 @@ Write in the file `102-O`, the big O notations of the time complexity of the Cou
 * in the average case
 * in the worst case
 
+## 103-merge_sort.c, 103-O
+A function that sorts an array of integers in ascending order using the [Merge sort](https://en.wikipedia.org/wiki/Merge_sort) algorithm
+* Prototype: `void merge_sort(int *array, size_t size);`
+* You must implement the **`top-down`** merge sort algorithm
+    * When you divide an array into two sub-arrays, the size of the left array should always be <= the size of the right array. i.e. `{1, 2, 3, 4, 5}` -> `{1, 2}, {3, 4, 5}`
+    * Sort the left array before the right array
+* You are allowed to use `printf`
+* You are allowed to use `malloc` and `free` only once (only one **call**)
+* Output: see example
+
+Write in the file `103-O`, the big O notations of the time complexity of the Merge sort algorithm, with 1 notation per line:
+* in the best case
+* in the average case
+* in the worst case
+
 ## Support🎉
 _If you like how I present and document my work do me a favor of giving a **Star** ✨ to my repos |&&| a [**Follow**](https://github.com/elyse502) 👥._
 

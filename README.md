@@ -445,6 +445,18 @@ The Stooge sort is a recursive sorting algorithm. It is defined for ascending or
 Merge sort involves recursively splitting the array into 2 parts, sorting and finally merging them. A variant of merge sort is called 3-way merge sort where instead of splitting the array into 2 parts we split it into 3 parts.
 Merge sort recursively breaks down the arrays to subarrays of size half. Similarly, 3-way Merge sort breaks down the arrays to subarrays of size one third.
 
+# Tasks 📃
+## 0-bubble_sort.c, 0-O
+[**`YoutubeVideo`**](https://www.youtube.com/watch?v=lyZQPjUT5B4)
+A function that sorts an array of integers in ascending order using the [`Bubble sort`](https://en.wikipedia.org/wiki/Bubble_sort) algorithm
+* Prototype: `void bubble_sort(int *array, size_t size);`
+* You’re expected to print the `array` after each time you swap two elements (See example below)
+
+Write in the file `0-O`, the big O notations of the time complexity of the Bubble sort algorithm, with 1 notation per line:
+* in the best case
+* in the average case
+* in the worst case
+
 ## Support🎉
 _If you like how I present and document my work do me a favor of giving a **Star** ✨ to my repos |&&| a [**Follow**](https://github.com/elyse502) 👥._
 

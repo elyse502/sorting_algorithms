@@ -13,7 +13,8 @@
 # More Info
 ### Data Structure and Functions
 * For this project you are given the following **`print_array`**, and **`print_list`** functions:
-```
+```groovy
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -37,8 +38,10 @@ void print_array(const int *array, size_t size)
     }
     printf("\n");
 }
+
 ```
-```
+```groovy
+
 #include <stdio.h>
 #include "sort.h"
 
@@ -62,11 +65,14 @@ void print_list(const listint_t *list)
     }
     printf("\n");
 }
+
 ```
 * Our files **`print_array.c`** and **`print_list.c`** (containing the `print_array` and `print_list` functions) will be compiled with your functions during the correction.
 * Please declare the prototype of the functions **`print_array`** and **`print_list`** in your **_`sort.h`_** header file
 * Please use the following data structure for doubly linked list:
-```
+
+```groovy
+
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -80,6 +86,7 @@ typedef struct listint_s
     struct listint_s *prev;
     struct listint_s *next;
 } listint_t;
+
 ```
 Please, note this format is used for Quiz and Task questions.
 
@@ -93,12 +100,22 @@ Please, note this format is used for Quiz and Task questions.
 * …
 Please use the “short” notation (don’t use constants). Example: `O(nk)` or `O(wn)` should be written `O(n)`. If an answer is required within a file, all your answers files must have a newline at the end.
 
-### Tests
+## Tests
 Here is a quick tip to help you test your sorting algorithms with big sets of random integers: [`Random.org`](https://www.random.org/integer-sets/)
 
-# Sorting Algorithms
-<hr>
+# Background Context
+This project is meant to be done by groups of two students. Each group of two should [pair program](https://en.wikipedia.org/wiki/Pair_programming) for at least the mandatory part.
 
+## General
+* At least four different sorting algorithms
+* What is the Big O notation, and how to evaluate the time complexity of an algorithm
+* How to select the best sorting algorithm for a given input
+* What is a stable sorting algorithm
+
+# Sorting Algorithms
+<details>
+    <summary>Click to show/hide Content</summary><br />
+    
 A `sorting algorithm` is an algorithm that puts elements of a list into an order. The most frequently used orders are `numerical order` and `lexicographical order`, and either ascending or descending. Efficient sorting is important for optimizing the efficiency of other algorithms (such as search and merge algorithms) that require input data to be in sorted lists. Sorting is also often useful for `canonicalizing data` and for producing `human-readable` output.
 
 Formally, the output of any sorting algorithm must satisfy two conditions:
@@ -445,9 +462,12 @@ The Stooge sort is a recursive sorting algorithm. It is defined for ascending or
 Merge sort involves recursively splitting the array into 2 parts, sorting and finally merging them. A variant of merge sort is called 3-way merge sort where instead of splitting the array into 2 parts we split it into 3 parts.
 Merge sort recursively breaks down the arrays to subarrays of size half. Similarly, 3-way Merge sort breaks down the arrays to subarrays of size one third.
 
+</details>
+
 # Tasks 📃
-## 0. Bubble sort: 0-bubble_sort.c, 0-O
+## 0. Bubble sort: [0-bubble_sort.c](0-bubble_sort.c), [0-O](0-O)
 [**`YoutubeVideo`**](https://www.youtube.com/watch?v=lyZQPjUT5B4)
+
 A function that sorts an array of integers in ascending order using the [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) algorithm
 * Prototype: `void bubble_sort(int *array, size_t size);`
 * You’re expected to print the `array` after each time you swap two elements 
@@ -456,7 +476,9 @@ Write in the file `0-O`, the big O notations of the time complexity of the Bubbl
 * in the best case
 * in the average case
 * in the worst case
-```
+
+```groovy
+
 alex@/tmp/sort$ cat 0-main.c 
 #include <stdio.h>
 #include <stdlib.h>
@@ -507,9 +529,14 @@ alex@/tmp/sort$ ./bubble
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
+
 ```
-## 1. Insertion sort: 1-insertion_sort_list.c, 1-O
+
+---
+
+## 1. Insertion sort: [1-insertion_sort_list.c](1-insertion_sort_list.c), [1-O](1-O)
 [**`YoutubeVideo`**](https://www.youtube.com/watch?v=ROalU379l3U)
+
 A function that sorts a doubly linked list of integers in ascending order using the [Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm
 * Prototype: `void insertion_sort_list(listint_t **list);`
 * You are not allowed to modify the integer `n` of a node. You have to swap the nodes themselves.
@@ -519,7 +546,9 @@ Write in the file `1-O`, the big O notations of the time complexity of the Inser
 * in the best case
 * in the average case
 * in the worst case
-```
+
+```groovy
+
 alex@/tmp/sort$ cat 1-main.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -605,9 +634,14 @@ alex@/tmp/sort$ ./insertion
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
+
 ```
-## 2. Selection sort: 2-selection_sort.c, 2-O
+
+---
+
+## 2. Selection sort: [2-selection_sort.c](2-selection_sort.c), [2-O](2-O)
 [**`YoutubeVideo`**](https://www.youtube.com/watch?v=Ns4TPTC8whw)
+
 A function that sorts an array of integers in ascending order using the [Selection sort](https://en.wikipedia.org/wiki/Selection_sort) algorithm
 * Prototype: `void selection_sort(int *array, size_t size);`
 * You’re expected to print the `array` after each time you swap two elements 
@@ -616,7 +650,9 @@ Write in the file `2-O`, the big O notations of the time complexity of the Selec
 * in the best case
 * in the average case
 * in the worst case
-```
+
+```groovy
+
 alex@/tmp/sort$ cat 2-main.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -654,9 +690,15 @@ alex@/tmp/sort$ ./select
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
+
 ```
-## 3. Quick sort: 3-quick_sort.c, 3-O
+
+---
+
+
+## 3. Quick sort: [3-quick_sort.c](3-quick_sort.c), [3-O](3-O)
 [**`YoutubeVideo`**](https://www.youtube.com/watch?v=ywWBy6J5gz8)
+
 A function that sorts an array of integers in ascending order using the [Quick sort](https://en.wikipedia.org/wiki/Quicksort) algorithm
 * Prototype: `void quick_sort(int *array, size_t size);`
 * You must implement the `Lomuto` partition scheme.
@@ -667,7 +709,9 @@ Write in the file `3-O`, the big O notations of the time complexity of the Quick
 * in the best case
 * in the average case
 * in the worst case
-```
+
+```groovy
+
 alex@/tmp/sort$ cat 3-main.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -704,8 +748,12 @@ alex@/tmp/sort$ ./quick
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
+
 ```
-## 4. Shell sort - Knuth Sequence: 100-shell_sort.c
+
+---
+
+## 4. Shell sort - Knuth Sequence: [100-shell_sort.c](100-shell_sort.c)
 A function that sorts an array of integers in ascending order using the [Shell sort](https://en.wikipedia.org/wiki/Shellsort) algorithm, using the **`Knuth sequence`**
 * Prototype: `void shell_sort(int *array, size_t size);`
 * You must use the following sequence of intervals (a.k.a the Knuth sequence):
@@ -714,7 +762,9 @@ A function that sorts an array of integers in ascending order using the [Shell s
 * You’re expected to print the `array` each time you decrease the interval.
 
 **No big O notations of the time complexity of the Shell sort (Knuth sequence) algorithm needed - as the complexity is dependent on the size of array and gap**
-```
+
+```groovy
+
 alex@/tmp/sort$ cat 100-main.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -746,8 +796,13 @@ alex@/tmp/sort$ ./shell
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
+
 ```
-## 5. Cocktail shaker sort: 101-cocktail_sort_list.c, 101-O
+
+---
+
+
+## 5. Cocktail shaker sort: [101-cocktail_sort_list.c](101-cocktail_sort_list.c), [101-O](101-O)
 A function that sorts a doubly linked list of integers in ascending order using the [Cocktail shaker sort](https://en.wikipedia.org/wiki/Cocktail_shaker_sort) algorithm
 * Prototype: `void cocktail_sort_list(listint_t **list);`
 * You are not allowed to modify the integer `n` of a node. You have to swap the nodes themselves.
@@ -757,7 +812,9 @@ Write in the file `101-O`, the big O notations of the time complexity of the Coc
 * in the best case
 * in the average case
 * in the worst case
-```
+
+```groovy
+
 alex@/tmp/sort$ cat 101-main.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -843,8 +900,12 @@ alex@/tmp/sort$ ./cocktail
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
+
 ```
-## 6. Counting sort: 102-counting_sort.c, 102-O
+
+---
+
+## 6. Counting sort: [102-counting_sort.c](102-counting_sort.c), [102-O](102-O)
 A function that sorts an array of integers in ascending order using the [Counting sort](https://en.wikipedia.org/wiki/Counting_sort) algorithm
 * Prototype: `void counting_sort(int *array, size_t size);`
 * You can assume that `array` will contain only numbers `>= 0`
@@ -856,7 +917,9 @@ Write in the file `102-O`, the big O notations of the time complexity of the Cou
 * in the best case
 * in the average case
 * in the worst case
-```
+
+```groovy
+
 alex@/tmp/sort$ cat 102-main.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -887,8 +950,12 @@ alex@/tmp/sort$ ./counting
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
+
 ```
-## 7. Merge sort: 103-merge_sort.c, 103-O
+
+---
+
+## 7. Merge sort: [103-merge_sort.c](103-merge_sort.c), [103-O](103-O)
 A function that sorts an array of integers in ascending order using the [Merge sort](https://en.wikipedia.org/wiki/Merge_sort) algorithm
 * Prototype: `void merge_sort(int *array, size_t size);`
 * You must implement the **`top-down`** merge sort algorithm
@@ -902,7 +969,9 @@ Write in the file `103-O`, the big O notations of the time complexity of the Mer
 * in the best case
 * in the average case
 * in the worst case
-```
+
+```groovy
+
 alex@/tmp/sort$ cat 103-main.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -968,8 +1037,12 @@ Merging...
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
+
 ```
-## 8. Heap sort: 104-heap_sort.c, 104-O
+
+---
+
+## 8. Heap sort: [104-heap_sort.c](104-heap_sort.c), [104-O](104-O)
 A function that sorts an array of integers in ascending order using the [Heap sort](https://en.wikipedia.org/wiki/Heapsort) algorithm
 * Prototype: `void heap_sort(int *array, size_t size);`
 * You must implement the `sift-down` heap sort algorithm
@@ -979,7 +1052,9 @@ Write in the file `104-O`, the big O notations of the time complexity of the Hea
 * in the best case
 * in the average case
 * in the worst case
-```
+
+```groovy
+
 alex@/tmp/sort$ cat 104-main.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -1036,15 +1111,21 @@ alex@/tmp/sort$ ./heap
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
+
 ```
-## 9. Radix sort: 105-radix_sort.c
+
+---
+
+## 9. Radix sort: [105-radix_sort.c](105-radix_sort.c)
 A function that sorts an array of integers in ascending order using the [Radix sort](https://en.wikipedia.org/wiki/Radix_sort) algorithm
 * Prototype: `void radix_sort(int *array, size_t size);`
 * You must implement the **`LSD`** radix sort algorithm
 * You can assume that `array` will contain only numbers `>= 0`
 * You are allowed to use `malloc` and `free` for this task
 * You’re expected to print the `array` each time you increase your **`significant digit`**
-```
+
+```groovy
+
 alex@/tmp/sort$ cat 105-main.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -1076,8 +1157,12 @@ alex@/tmp/sort$ ./radix
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
+
 ```
-## 10. Bitonic sort: 106-bitonic_sort.c, 106-O
+
+---
+
+## 10. Bitonic sort: [106-bitonic_sort.c](106-bitonic_sort.c), [106-O](106-O)
 A function that sorts an array of integers in ascending order using the [Bitonic sort](https://en.wikipedia.org/wiki/Bitonic_sorter) algorithm
 * Prototype: `void bitonic_sort(int *array, size_t size);`
 * You can assume that `size` will be equal to `2^k`, where `k >= 0` (when `array` is not `NULL` …)
@@ -1089,7 +1174,9 @@ Write in the file `106-O`, the big O notations of the time complexity of the Bit
 * in the best case
 * in the average case
 * in the worst case
-```
+
+```groovy
+
 alex@/tmp/sort$ cat 106-main.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -1179,8 +1266,12 @@ Result [16/16] (UP):
 
 13, 14, 15, 26, 31, 39, 40, 46, 54, 56, 57, 58, 78, 85, 93, 100
 alex@/tmp/sort$
+
 ```
-## 11. Quick Sort - Hoare Partition scheme: 107-quick_sort_hoare.c, 107-O
+
+---
+
+## 11. Quick Sort - Hoare Partition scheme: [107-quick_sort_hoare.c](107-quick_sort_hoare.c), [107-O](107-O)
 A function that sorts an array of integers in ascending order using the [Quick sort](https://en.wikipedia.org/wiki/Quicksort) algorithm
 * Prototype: `void quick_sort_hoare(int *array, size_t size);`
 * You must implement the **`Hoare`** partition scheme.
@@ -1191,7 +1282,9 @@ Write in the file `107-O`, the big O notations of the time complexity of the Qui
 * in the best case
 * in the average case
 * in the worst case
-```
+
+```groovy
+
 alex@/tmp/sort$ cat 107-main.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -1230,9 +1323,11 @@ alex@/tmp/sort$ ./quick
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
+
 ```
 Another example of output:
-```
+```groovy
+
 alex@/tmp/sort$ ./quick_2
 87, 65, 28, 63, 93, 52, 39, 59, 27, 30, 24, 83, 69, 62, 13, 6, 88, 58, 92, 26, 42, 11, 16, 21, 75, 36, 71, 8, 45, 38
 
@@ -1274,14 +1369,18 @@ alex@/tmp/sort$ ./quick_2
 
 6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 39, 42, 45, 52, 58, 59, 62, 63, 65, 69, 71, 75, 83, 87, 88, 92, 93
 alex@/tmp/sort$
+
 ````
-## 12. Dealer: 1000-sort_deck.c, deck.h
+## 12. Dealer: [1000-sort_deck.c](1000-sort_deck.c), [deck.h](deck.h)
 [**`YoutubeVideo`**](https://www.youtube.com/watch?v=_HJlGWXzlLA)
+
 A function that sorts a deck of cards.
 * Prototype: `void sort_deck(deck_node_t **deck);`
 * You are allowed to use the C standard library function `qsort`
 * Please use the following data structures:
-```
+
+```groovy
+
 typedef enum kind_e
 {
     SPADE = 0,
@@ -1316,7 +1415,9 @@ typedef struct deck_node_s
     struct deck_node_s *prev;
     struct deck_node_s *next;
 } deck_node_t;
+
 ```
+
 * You have to push you `deck.h` header file, containing the previous data structures definition
 * Each node of the doubly linked list contains a card that you cannot modify. You have to swap the nodes.
 * You can assume there is exactly `52` elements in the doubly linked list.
@@ -1325,7 +1426,9 @@ typedef struct deck_node_s
     * From `Ace` to `King`
     * From Spades to Diamonds
     * See example below
-```
+
+```groovy
+
 alex@/tmp/sort$ cat 1000-main.c
 #include <stdlib.h>
 #include <stdio.h>
@@ -1400,7 +1503,11 @@ alex@/tmp/sort$ ./deck
 {Ace, C}, {2, C}, {3, C}, {4, C}, {5, C}, {6, C}, {7, C}, {8, C}, {9, C}, {10, C}, {Jack, C}, {Queen, C}, {King, C}
 {Ace, D}, {2, D}, {3, D}, {4, D}, {5, D}, {6, D}, {7, D}, {8, D}, {9, D}, {10, D}, {Jack, D}, {Queen, D}, {King, D}
 alex@/tmp/sort$
+
 ```
+
+<hr />
+
 ## Support🎉
 _If you like how I present and document my work do me a favor of giving a **Star** ✨ to my repos |&&| a [**Follow**](https://github.com/elyse502) 👥._
 
@@ -1418,3 +1525,10 @@ All work contained in this project was completed as part of the curriculum for t
 *__NIYIBIZI Elysée__ | [**Linkedin**](https://www.linkedin.com/in/niyibizi-elys%C3%A9e/) && [**Twitter**](https://twitter.com/Niyibizi_Elyse).*
 
 ![239912022-2d08e450-0f63-4979-89cc-1c377d48c32a](https://github.com/elyse502/sorting_algorithms/assets/125453474/03fd2f5c-6cc5-41e8-9aad-304a51db9c7a)
+
+
+
+
+
+
+

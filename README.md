@@ -13,6 +13,7 @@
 # More Info
 ### Data Structure and Functions
 * For this project you are given the following **`print_array`**, and **`print_list`** functions:
+
 ```groovy
 
 #include <stdlib.h>
@@ -1527,7 +1528,6 @@ All work contained in this project was completed as part of the curriculum for t
 *__NIYIBIZI Elysée__ | [**Linkedin**](https://www.linkedin.com/in/niyibizi-elys%C3%A9e/) && [**Twitter**](https://twitter.com/Niyibizi_Elyse).*
 
 ![239912022-2d08e450-0f63-4979-89cc-1c377d48c32a](https://github.com/elyse502/sorting_algorithms/assets/125453474/03fd2f5c-6cc5-41e8-9aad-304a51db9c7a)
-
 
 
 
